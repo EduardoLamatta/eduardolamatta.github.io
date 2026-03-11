@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 12px;
+    padding: 20px 30px;
 
     position: fixed;
     top: 0;
@@ -29,16 +29,26 @@
   gap:100px;
 }
 
+.languages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-img{
+    border-radius: 1.5px;
+}
 
 body {
-  padding-top: 66px;
+  padding-top: 64px;
 }
 
 /*Section Home*/
 .home-style{
     background-color: #2E2C2D;
-    padding-bottom: 498px;
-    scroll-margin-top: 66px;
+    padding-bottom: 520px;
+    scroll-margin-top: 64px;
 }
 
 /*Section About Me*/
@@ -51,7 +61,7 @@ body {
     align-items: center;
 
     padding: 50px 250px;
-    scroll-margin-top: 66px;
+    scroll-margin-top: 64px;
 }
 
 .about-me-container{
@@ -61,6 +71,8 @@ body {
     align-items: center;
 
     gap:100px;
+    padding-top: 30px;
+
 }
 
 .text-about-me{
@@ -70,7 +82,7 @@ body {
 }
 
 .image-about-me{
-    padding: 10px 200px;
+    border-radius: 10px;
 }
 
 
@@ -84,7 +96,7 @@ body {
 
     padding-top: 50px;
     padding-bottom: 100px;
-    scroll-margin-top: 66px;
+    scroll-margin-top: 64px;
 }
 
 .project-nav{ /* container from project list*/
@@ -97,6 +109,8 @@ body {
 
     padding-top: 30px;
     padding-bottom: 40px;
+
+    font-size: 20px;
 }
 
 
@@ -110,9 +124,12 @@ body {
 }
 
 .unit-project-style{
+
+    position: relative;
+
     background-color: #161B22;
     width: 800px;
-    height: 550px;
+    height: 770px;
     margin: 0;
 
     display: flex;
@@ -121,7 +138,11 @@ body {
     /* justify-content: center; */
 
     padding: 50px 80px;
-    scroll-margin-top: 67px;
+    scroll-margin-top: 63px;
+
+    border-radius: 40px;
+
+    gap: 20px;
 }
 
 .information-container{
@@ -141,16 +162,55 @@ body {
     padding-top: 20px;
 }
 
+.c-sharp-rect{
+    background-color: #B900B6;
+    width: 80px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.kotlin-rect{
+    background-color: #078600;
+    width: 80px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.sql-rect{
+    background-color: #1300B9;
+    width: 80px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+
 .icon-project{
     display: flex;
     flex-direction: row;
 
     gap: 10px;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .text-project{
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
@@ -162,6 +222,29 @@ body {
     gap: 20px;
 }
 
+.button-demo{
+    background-color: #ffffff;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button-demo h5{
+    color: #000000;
+    
+}
+
 /*Section Contact*/
 .contact-style{
     background-color: #0B1015;
@@ -171,6 +254,8 @@ body {
     align-items: center;
 
     padding: 50px;
+
+    
 }
 
 .textContact{
@@ -179,7 +264,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 10px;
+    padding: 30px;
 }
 
 .networksContact{
@@ -189,7 +274,7 @@ body {
     align-items: center;
 
     gap: 30px;
-    padding-top: 20px;
+
 }
 
 
@@ -199,5 +284,62 @@ body {
     display: flex;
     justify-content: center;
 
-    padding: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+/*Compounents Color*/
+
+h1{
+    color: #FF9B6A;
+    font-size: 40px;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 32px;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 28px;
+}
+
+h4{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+h5{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+h6{
+    color: #ffffff;
+    font-size: 12px;
+}
+
+p {
+  color: #ffffff;
+  text-align: justify;
+  font-size: 16px;
+}
+
+ul {
+  color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/*Fonts*/
+
+body {
+  font-family: "Inter", sans-serif;
 }

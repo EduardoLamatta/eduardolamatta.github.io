@@ -7,22 +7,34 @@
             Portfolio - Eduardo Lamatta | Game Programming
         </title>
 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="styles.css">
+
     </head>
 
     <body>
 
         <!-- Header -->
         <header class="header-style">
-            <h2>Eduardo Lamatta</h2>
+            <h4>Eduardo Lamatta</h4>
             <nav class="header-nav">
                 <a href="#home">Inicio</a>
-                <a href="#about-me">Sobre Mí</a>
+                <a href="#about-me">Sobre Mi</a>
                 <a href="#project">Proyectos</a>
                 <a href="#resume">Curriculum</a>
                 <a href="#contact">Contacto</a>
             </nav>
-            idioma
+            <div class language>
+                <p>
+                    es
+                    <img class="language-img" src="C:\Users\Edlmt\Desktop\CODE\HTML\eduardolamatta.github.io\Flag_of_Peru.png" height="10px">
+                </p>
+            </div>
+            
 
         </header>
         
@@ -30,13 +42,11 @@
          <main>
             <!-- About Me Section -->
              <section id="home" class="home-style">
-                <h2>Inicio</h2>
-                <p>Sección Videos de Proyectos</p>
              </section>
             <!-- About Me Section -->
 
              <section id="about-me" class="about-me-style">
-                <h2>Sobre Mí</h2>
+                <h1>SOBRE MI</h1>
                 <div class="about-me-container">
                     <div class="text-about-me">
                         <p>Hola, mi nombre es Eduardo Lamatta. Soy físico y me apasiona la programación. 
@@ -47,21 +57,20 @@
                             Unity e Inkscape, y lenguajes de programación como Kotlin, SQL y C#. También tengo experiencia, en 
                             menor medida, con Python y VBA.</p>
                     </div>
-                    <img src="C:\Users\Edlmt\Desktop\CODE\HTML\eduardolamatta.github.io\foto_perfil.jpeg" alt="Mi foto" width="276px">
+                    <img class="image-about-me" src="C:\Users\Edlmt\Desktop\CODE\HTML\eduardolamatta.github.io\foto_perfil.jpeg" alt="Mi foto" width="276px">
 
                 </div>
              </section>
 
             <!-- Projects Section -->
              <section id="project" class="project-style">
-                <h2>Proyectos</h2>
+                <h1>PROYECTOS</h1>
                 <div class="projects-container">
                     <nav class="project-nav">
-                        <a href="#rx-projex">Rx Projex</a>
-                        <a href="#the-apus-escape-room">the Apus: Escape Room</a>
-                        <a href="#overtime-system">Overtime System</a>
-                        <!-- <a href="#overtime-check">Overtime Check</a> -->
-                        <a href="#drilling-core">Drilling Core</a>
+                        <a href="#rx-projex"><h5>Rx Projex</h5></a>
+                        <a href="#the-apus-escape-room"><h5>The Apus: Escape Room</h5></a>
+                        <a href="#overtime-system"><h5>Overtime System</h5></a>
+                        <a href="#drilling-core"><h5>Drilling Core</h5></a>
                     </nav>
 
                     <!-- Projects -->
@@ -70,7 +79,7 @@
 
                     <!-- Rx Projex -->
                         <div id="rx-projex" class="unit-project-style">
-                            <h3>Rx Projex</h3>
+                            <h2>Rx Projex</h2>
                             <div class="information-container">
                                 <div class="text-project">
                                     <div class="programming-languages">
@@ -86,33 +95,39 @@
                                         <p>
                                         Aplicación que funciona como una herramienta de consulta para verificar y revisar la 
                                         información necesaria al realizar radiografías en diferentes partes del cuerpo, tales como:
-                                    </p>
-                                        <ul>
-                                            <li>La distancia a la fuente</li>
-                                            <li>La posición del paciente</li>
-                                            <li>El tamaño del receptor de imagen</li>
-                                            <li>La ubicación del rayo central</li>
-                                        </ul>   
-                                    <p>
-                                        La ubicación del rayo central
-                                        Además, la aplicación proporciona imágenes de referencia y permite experimentar con los 
-                                        valores de Kv y mA para observar cómo afectan la imagen radiográfica. Además ofrece la 
-                                        posibilidad de guardar configuraciones personalizadas para su uso posterior.
-                                    </p>
+                                        </p>
+                                            <ul>
+                                                <li>La distancia a la fuente</li>
+                                                <li>La posición del paciente</li>
+                                                <li>El tamaño del receptor de imagen</li>
+                                                <li>La ubicación del rayo central</li>
+                                            </ul>   
+                                        <p>
+                                            La ubicación del rayo central
+                                            Además, la aplicación proporciona imágenes de referencia y permite experimentar con los 
+                                            valores de Kv y mA para observar cómo afectan la imagen radiográfica. Además ofrece la 
+                                            posibilidad de guardar configuraciones personalizadas para su uso posterior.
+                                        </p>
                                     </div>
+
+                                    
                                     
                                 </div>
                                 <div class="screenshot-project">
                                     <img src="screenshot-1">
                                     <img src="screenshot-2">
                                 </div>
+
+                            </div>
+                            <div class="button-demo">
+                                <h5>Probar Demo</h5>
                             </div>
 
                         </div>
 
                     <!-- The Apus: Escape Room -->
                         <div id="the-apus-escape-room" class="unit-project-style">
-                            <h3>The Apus: Escape Room</h3>
+                            <h2>The Apus: Escape Room</h2>
                             <div class="information-container">
                                 <div class="text-project">
                                     <div class="programming-languages">
@@ -142,11 +157,14 @@
                                     <img src="screenshot-2">
                                 </div>
                             </div>
+                            <div class="button-demo">
+                                <h5>Probar Demo</h5>
+                            </div>
                         </div>
 
                     <!-- Overtime System -->
                         <div id="overtime-system" class="unit-project-style">
-                            <h3>Overtime System</h3>
+                            <h2>Overtime System</h2>
                             <div class="information-container">
                                 <div class="text-project">
                                     <div class="programming-languages">
@@ -180,10 +198,13 @@
                                     <img src="screenshot-2">
                                 </div>
                             </div>
+                            <div class="button-demo">
+                                <h5>Probar Demo</h5>
+                            </div>
                         </div>
                     <!-- Overtime Check 
                         <div id="overtime-check" class="unit-project-style">
-                            <h3>Overtime Check</h3>
+                            <h2>Overtime Check</h2>
                             <div class="information-container">
                                 <div class="text-project">
                                     <div class="programming-languages">
@@ -222,7 +243,7 @@
 
                     <!-- Drilling Core -->
                         <div id="drilling-core" class="unit-project-style">
-                            <h3>Drilling Core</h3>
+                            <h2>Drilling Core</h2>
                             <div class="information-container">
                                 <div class="text-project">
                                     <div class="programming-languages">
@@ -260,6 +281,9 @@
                                     <img src="screenshot-2">
                                 </div>
                             </div>
+                            <div class="button-demo">
+                                <h5>Probar Demo</h5>
+                            </div>
                         </div>
 
                 </div>                
@@ -267,7 +291,7 @@
 
             <!-- Contact Section -->
              <section id="contact" class="contact-style">
-                <h2>Contacto</h2>
+                <h1>CONTACTO</h1>
                 <div>
                     <div class="textContact">
                         <p>No dudes en enviarme un mensaje en cualquier momento.</p>
@@ -291,8 +315,12 @@
          </main>
 
          <footer class="footer-style">
-            Copyright © 2026 Eduardo Lamatta. Todos los derechos reservados
+            <h6>Copyright © 2026 Eduardo Lamatta. Todos los derechos reservados</h6>
          </footer>
+
+         <!-- link to the java script file-->
+         <script src="script.js"></script> 
+
     </body>
 
 </html>
