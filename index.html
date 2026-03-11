@@ -4,38 +4,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale=1.0">
         <title> 
-            Primera versión de mi página web
+            Portfolio - Eduardo Lamatta | Game Programming
         </title>
+
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
 
         <!-- Header -->
-        <header>
-            <nav>
-                Eduardo Lamatta
+        <header class="header-style">
+            <h2>Eduardo Lamatta</h2>
+            <nav class="header-nav">
                 <a href="#home">Inicio</a>
                 <a href="#about-me">Sobre Mí</a>
                 <a href="#project">Proyectos</a>
                 <a href="#resume">Curriculum</a>
                 <a href="#contact">Contacto</a>
-                idioma
             </nav>
+            idioma
+
         </header>
         
         <!-- Main Content -->
          <main>
             <!-- About Me Section -->
-             <section id="home">
+             <section id="home" class="home-style">
                 <h2>Inicio</h2>
                 <p>Sección Videos de Proyectos</p>
              </section>
             <!-- About Me Section -->
 
-             <section id="about-me">
+             <section id="about-me" class="about-me-style">
                 <h2>Sobre Mí</h2>
                 <div class="about-me-container">
-                    <div class="text">
+                    <div class="text-about-me">
                         <p>Hola, mi nombre es Eduardo Lamatta. Soy físico y me apasiona la programación. 
                             Empecé a aprender por mi cuenta desde que estaba en la universidad y, a lo largo de estos años, 
                             he desarrollado varios programas para computadora, así como aplicaciones móviles.</p>
@@ -44,13 +47,13 @@
                             Unity e Inkscape, y lenguajes de programación como Kotlin, SQL y C#. También tengo experiencia, en 
                             menor medida, con Python y VBA.</p>
                     </div>
-                    <img src="mi-foto.jpg" alt="Mi foto">
+                    <img src="C:\Users\Edlmt\Desktop\CODE\HTML\eduardolamatta.github.io\foto_perfil.jpeg" alt="Mi foto" width="276px">
 
                 </div>
              </section>
 
             <!-- Projects Section -->
-             <section id="project">
+             <section id="project" class="project-style">
                 <h2>Proyectos</h2>
                 <div class="projects-container">
                     <nav class="project-nav">
@@ -66,17 +69,21 @@
                     <div class="projects-list">
 
                     <!-- Rx Projex -->
-                        <div id="rx-projex" class="project-style">
+                        <div id="rx-projex" class="unit-project-style">
                             <h3>Rx Projex</h3>
-                            <div class="rx-projex-container">
+                            <div class="information-container">
                                 <div class="text-project">
-                                    <p class="c-sharp-rect">C#</p>
+                                    <div class="programming-languages">
+                                        <p class="c-sharp-rect">C#</p>
+                                    </div>
+                                    
                                     <div class="icon-project">
                                         <img src="icon-1">
                                         <img src="icon-2">
                                         <img src="icon-3">
                                     </div>
-                                    <p>
+                                    <div class="text-project">
+                                        <p>
                                         Aplicación que funciona como una herramienta de consulta para verificar y revisar la 
                                         información necesaria al realizar radiografías en diferentes partes del cuerpo, tales como:
                                     </p>
@@ -92,6 +99,8 @@
                                         valores de Kv y mA para observar cómo afectan la imagen radiográfica. Además ofrece la 
                                         posibilidad de guardar configuraciones personalizadas para su uso posterior.
                                     </p>
+                                    </div>
+                                    
                                 </div>
                                 <div class="screenshot-project">
                                     <img src="screenshot-1">
@@ -102,26 +111,31 @@
                         </div>
 
                     <!-- The Apus: Escape Room -->
-                        <div id="the-apus-escape-room" class="project-style">
+                        <div id="the-apus-escape-room" class="unit-project-style">
                             <h3>The Apus: Escape Room</h3>
-                            <div class="rx-projex-container">
+                            <div class="information-container">
                                 <div class="text-project">
-                                    <p class="c-sharp-rect">C#</p>
+                                    <div class="programming-languages">
+                                        <p class="c-sharp-rect">C#</p>
+                                    </div>
                                     <div class="icon-project">
                                         <img src="icon-1">
                                         <img src="icon-2">
                                         <img src="icon-3">
                                     </div>
-                                    <p>
-                                        Videojuego ambientación de misterio, en el que el jugador debe explorar diferentes 
-                                        escenarios, interactuar con objetos y resolver acertijos para avanzar en la historia 
-                                        a través de mecánicas point and click y usando una vista isométrica para facilitar la 
-                                        exploración e interacción con el escenario para resolver los desafíos.
-                                    </p>
-                                    <p>
-                                        El diseño del juego se centra en puzzles basados en observación y lógica, donde el 
-                                        jugador debe descifrar códigos, descubrir objetos y conectar pistas dentro del entorno. 
-                                    </p>
+                                    <div class="text-project">
+                                        <p>
+                                            Videojuego ambientación de misterio, en el que el jugador debe explorar diferentes 
+                                            escenarios, interactuar con objetos y resolver acertijos para avanzar en la historia 
+                                            a través de mecánicas point and click y usando una vista isométrica para facilitar la 
+                                            exploración e interacción con el escenario para resolver los desafíos.
+                                        </p>
+                                        <p>
+                                            El diseño del juego se centra en puzzles basados en observación y lógica, donde el 
+                                            jugador debe descifrar códigos, descubrir objetos y conectar pistas dentro del entorno. 
+                                        </p>
+                                    </div>
+                                    
                                 </div>
                                 <div class="screenshot-project">
                                     <img src="screenshot-1">
@@ -131,30 +145,35 @@
                         </div>
 
                     <!-- Overtime System -->
-                        <div id="overtime-system" class="project-style">
+                        <div id="overtime-system" class="unit-project-style">
                             <h3>Overtime System</h3>
-                            <div class="rx-projex-container">
+                            <div class="information-container">
                                 <div class="text-project">
-                                    <p class="c-sharp-rect">C#</p>
+                                    <div class="programming-languages">
+                                        <p class="c-sharp-rect">C#</p>
+                                    </div>
 
                                     <div class="icon-project">
                                         <img src="icon-1">
                                         <img src="icon-2">
                                         <img src="icon-3">
                                     </div>
-                                    <p>
-                                        Herramienta desarrollada para automatizar la generación de formatos de registro de 
-                                        horas extras utilizados en procesos administrativos.
-                                    </p>
-                                        <ul>
-                                            <li>Registrar la información del personal</li>
-                                            <li>Organizar los datos de manera estructurada</li>
-                                            <li>Generar documentos listos para su uso</li>
-                                        </ul>   
-                                    <p>
-                                        Además, facilita la gestión de la información al reducir el trabajo manual, mejorando 
-                                        la eficiencia, minimizando errores y optimizando tareas administrativas.
-                                    </p>
+                                    <div class="text-project">
+                                        <p>
+                                            Herramienta desarrollada para automatizar la generación de formatos de registro de 
+                                            horas extras utilizados en procesos administrativos.
+                                        </p>
+                                            <ul>
+                                                <li>Registrar la información del personal</li>
+                                                <li>Organizar los datos de manera estructurada</li>
+                                                <li>Generar documentos listos para su uso</li>
+                                            </ul>   
+                                        <p>
+                                            Además, facilita la gestión de la información al reducir el trabajo manual, mejorando 
+                                            la eficiencia, minimizando errores y optimizando tareas administrativas.
+                                        </p>
+                                    </div>
+                                    
                                 </div>
                                 <div class="screenshot-project">
                                     <img src="screenshot-1">
@@ -163,32 +182,36 @@
                             </div>
                         </div>
                     <!-- Overtime Check 
-                        <div id="overtime-check" class="project-style">
+                        <div id="overtime-check" class="unit-project-style">
                             <h3>Overtime Check</h3>
-                            <div class="rx-projex-container">
+                            <div class="information-container">
                                 <div class="text-project">
-                                    <p class="c-sharp-rect">C#</p>
+                                    <div class="programming-languages">
+                                        <p class="c-sharp-rect">C#</p>
+                                    </div>
                                     <div class="icon-project">
                                         <img src="icon-1">
                                         <img src="icon-2">
                                         <img src="icon-3">
                                     </div>
-                                    <p>
-                                        Aplicación que funciona como una herramienta de consulta para verificar y revisar la 
-                                        información necesaria al realizar radiografías en diferentes partes del cuerpo, tales como:
-                                    </p>
-                                        <ul>
-                                            <li>La distancia a la fuente</li>
-                                            <li>La posición del paciente</li>
-                                            <li>El tamaño del receptor de imagen</li>
-                                            <li>La ubicación del rayo central</li>
-                                        </ul>   
-                                    <p>
-                                        La ubicación del rayo central
-                                        Además, la aplicación proporciona imágenes de referencia y permite experimentar con los 
-                                        valores de Kv y mA para observar cómo afectan la imagen radiográfica. Además ofrece la 
-                                        posibilidad de guardar configuraciones personalizadas para su uso posterior.
-                                    </p>
+                                    <div class="text-project">
+                                        <p>
+                                            Aplicación que funciona como una herramienta de consulta para verificar y revisar la 
+                                            información necesaria al realizar radiografías en diferentes partes del cuerpo, tales como:
+                                        </p>
+                                            <ul>
+                                                <li>La distancia a la fuente</li>
+                                                <li>La posición del paciente</li>
+                                                <li>El tamaño del receptor de imagen</li>
+                                                <li>La ubicación del rayo central</li>
+                                            </ul>   
+                                        <p>
+                                            La ubicación del rayo central
+                                            Además, la aplicación proporciona imágenes de referencia y permite experimentar con los 
+                                            valores de Kv y mA para observar cómo afectan la imagen radiográfica. Además ofrece la 
+                                            posibilidad de guardar configuraciones personalizadas para su uso posterior.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="screenshot-project">
                                     <img src="screenshot-1">
@@ -198,11 +221,11 @@
                         </div> -->
 
                     <!-- Drilling Core -->
-                        <div id="drilling-core" class="project-style">
+                        <div id="drilling-core" class="unit-project-style">
                             <h3>Drilling Core</h3>
-                            <div class="rx-projex-container">
+                            <div class="information-container">
                                 <div class="text-project">
-                                    <div>
+                                    <div class="programming-languages">
                                         <p class="kotlin-rect">Kotlin</p>
                                         <p class="sql-rect">SQL</p>
                                     </div>
@@ -211,23 +234,26 @@
                                         <img src="icon-2">
                                         <img src="icon-3">
                                     </div>
-                                    <p>
-                                        Aplicación que funciona como una herramienta de consulta para verificar y revisar 
-                                        información relacionada con equipos utilizados en operaciones de drilling, workover e 
-                                        intervención de pozos.
-                                    </p>
-                                        <ul>
-                                            <li>La identificación del equipo</li>
-                                            <li>Su función dentro de las operaciones</li>
-                                            <li>Sus componentes principales</li>
-                                            <li>El área de aplicación en campo</li>
-                                            <li>Métodos de inspección</li>
-                                        </ul>   
-                                    <p>
-                                        Además, la aplicación proporciona imágenes de referencia que facilitan el reconocimiento 
-                                        de los equipos, además de permitir consultar información técnica relevante y guardar 
-                                        configuraciones o registros/notas personalizados para su uso posterior.
-                                    </p>
+                                    <div class="text-project">
+                                        <p>
+                                            Aplicación que funciona como una herramienta de consulta para verificar y revisar 
+                                            información relacionada con equipos utilizados en operaciones de drilling, workover e 
+                                            intervención de pozos.
+                                        </p>
+                                            <ul>
+                                                <li>La identificación del equipo</li>
+                                                <li>Su función dentro de las operaciones</li>
+                                                <li>Sus componentes principales</li>
+                                                <li>El área de aplicación en campo</li>
+                                                <li>Métodos de inspección</li>
+                                            </ul>   
+                                        <p>
+                                            Además, la aplicación proporciona imágenes de referencia que facilitan el reconocimiento 
+                                            de los equipos, además de permitir consultar información técnica relevante y guardar 
+                                            configuraciones o registros/notas personalizados para su uso posterior.
+                                        </p>
+                                    </div>
+                                    
                                 </div>
                                 <div class="screenshot-project">
                                     <img src="screenshot-1">
@@ -240,7 +266,7 @@
              </section>
 
             <!-- Contact Section -->
-             <section id="contact">
+             <section id="contact" class="contact-style">
                 <h2>Contacto</h2>
                 <div>
                     <div class="textContact">
@@ -250,11 +276,11 @@
 
                     <!-- Social Networks -->
                     <nav class="networksContact">
-                        <a>gmail</a>
-                        <a>facebook</a>
-                        <a>instagram</a>
-                        <a>tiktok</a>
-                        <a>whatsapp</a>
+                        <a><img src="GMAIL"></a>
+                        <a><img src="FACEBOOK"></a>
+                        <a><img src="INSTAGRAM"></a>
+                        <a><img src="TIKTOK"></a>
+                        <a><img src="WHATSAPP"></a>
                     </nav>
                 </div>
              </section>
@@ -264,7 +290,7 @@
 
          </main>
 
-         <footer>
+         <footer class="footer-style">
             Copyright © 2026 Eduardo Lamatta. Todos los derechos reservados
          </footer>
     </body>
