@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +39,39 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    gap: 5px;
+    position: relative;
+    cursor: pointer;
 }
+
+.language-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    background-color: #1F1F23;
+    padding: 10px 15px;
+    border-radius: 8px;
+    z-index: 200;
+}
+
+.language-menu.activo {
+    display: flex;
+}
+
+.enLanguage.hide {
+    display: none;
+}
+
+.esLanguage.hide {
+    display: none;
+}
+
 
 .language-img{
     border-radius: 1.5px;
@@ -42,14 +79,26 @@
 
 body {
   padding-top: 64px;
+ 
+  /*Fonts*/
+  font-family: "Inter", sans-serif;
+
 }
 
 /*Section Home*/
 .home-style{
     background-color: #2E2C2D;
-    padding-bottom: 520px;
+    padding-bottom: 70px;
     scroll-margin-top: 64px;
+
+
+
+    padding-top: 70px;
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center; 
 }
+
 
 /*Section About Me*/
 .about-me-style{
@@ -354,8 +403,11 @@ a{
     font-size: 16px;
 }
 
-/*Fonts*/
 
-body {
-  font-family: "Inter", sans-serif;
-}
+
+
+/*
+
+.header-nav a.activo {
+    color: #FF9B6A; 
+*/

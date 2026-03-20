@@ -28,20 +28,28 @@
                 <a href="#resume">Curriculum</a>
                 <a href="#contact">Contacto</a>
             </nav>
-            <div class language>
-                <p>
-                    es
-                    <img class="language-img" src="Images\Flag_of_Peru.png" height="10px">
+
+
+            <div  onclick="toggleMenu()">
+                <p id="currentLanguage" class="languages">
+                    es <img class="language-img" src="Images/Flag_of_Peru.png" height="10px">
                 </p>
+                <nav id="languageMenu" class="language-menu">
+                    <p id="languageOption" class="languages" onclick="selectLanguage(event)">
+                        en <img id="flagOption" class="language-img" src="Images/Flag_of_USA.png" height="10px">
+                    </p>
+                </nav>
             </div>
-            
+
+             
 
         </header>
         
         <!-- Main Content -->
          <main>
-            <!-- About Me Section -->
+            <!-- Home Section -->
              <section id="home" class="home-style">
+                    <img src="Images/StoreRoom.gif" class="presentation">
              </section>
             <!-- About Me Section -->
 
@@ -57,7 +65,7 @@
                             Unity e Inkscape, y lenguajes de programación como Kotlin, SQL y C#. También tengo experiencia, en 
                             menor medida, con Python y VBA.</p>
                     </div>
-                    <img class="image-about-me" src="Images\foto_perfil.jpeg" alt="Mi foto" width="276px">
+                    <img class="image-about-me" src="Images/foto_perfil.jpeg" alt="Mi foto" width="276px">
 
                 </div>
              </section>
@@ -111,8 +119,8 @@
                                     </div>
                                 </div>
                                 <div class="screenshot-project-container-mobile">
-                                    <img class="screenshot-project" src="Images\rx_projex\init_rx.jpeg" height="400px">
-                                    <img class="screenshot-project" src="Images\rx_projex\rotula_rx.jpeg" height="400px">
+                                    <img class="screenshot-project" src="Images/rx_projex/init_rx.jpeg" height="400px">
+                                    <img class="screenshot-project" src="Images/rx_projex/rotula_rx.jpeg" height="400px">
                                 </div>
 
                             </div>
@@ -150,8 +158,8 @@
                                     
                                 </div>
                                 <div class="screenshot-project-container-pc">
-                                    <img class="screenshot-project" src="Images\the_apus_escape_room\powerRoom.gif" height="200px">
-                                    <img class="screenshot-project" src="Images\the_apus_escape_room\escape_room.png" height="200px">
+                                    <img class="screenshot-project" src="Images/the_apus_escape_room/powerRoom.gif" height="200px">
+                                    <img class="screenshot-project" src="Images/the_apus_escape_room/escape_room.png" height="200px">
                                 </div>
                             </div>
                             <div class="button-demo">
@@ -191,8 +199,8 @@
                                     
                                 </div>
                                 <div class="screenshot-project-container-pc">
-                                    <img class="screenshot-project" src="Images\overtime_system\overtime_system.png" height="200px">
-                                    <img class="screenshot-project" src="Images\overtime_system\overtime_system_1.png" height="200">
+                                    <img class="screenshot-project" src="Images/overtime_system/overtime_system.png" height="200px">
+                                    <img class="screenshot-project" src="Images/overtime_system/overtime_system_1.png" height="200">
                                 </div>
                             </div>
                             <div class="button-demo">
@@ -236,8 +244,8 @@
                                     
                                 </div>
                                 <div class="screenshot-project-container-mobile">
-                                    <img class="screenshot-project" src="Images\drilling_core\catalogue_drilling.jpeg" height="400px">
-                                    <img class="screenshot-project" src="Images\drilling_core\equipo_data.jpeg" height="400px">
+                                    <img class="screenshot-project" src="Images/drilling_core/catalogue_drilling.jpeg" height="400px">
+                                    <img class="screenshot-project" src="Images/drilling_core/equipo_data.jpeg" height="400px">
                                 </div>
                             </div>
                             <div class="button-demo">
@@ -278,7 +286,7 @@
          </footer>
 
          <!-- link to the java script file-->
-         <script src="script.js"></script> 
+         <script src="manager.js"></script> 
 
     </body>
 
