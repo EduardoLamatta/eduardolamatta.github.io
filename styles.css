@@ -13,6 +13,12 @@ html{
 
 /*Section Header*/
 .header-style{
+
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+
+
     background-color: #1F1F23;
 
     display: flex;
@@ -78,10 +84,13 @@ html{
 }
 
 body {
-  padding-top: 64px;
+  
+    overflow-x: hidden;
+    padding-top: 64px;
+  
  
   /*Fonts*/
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 
 }
 
@@ -96,12 +105,13 @@ body {
 
 
 /*Section Home*/
-.home-style{
+.home-style{   
+
     background-color: #2E2C2D;
     padding-bottom: 70px;
     scroll-margin-top: 64px;
 
-
+    width: 100%;
 
     padding-top: 70px;
     display: flex;
@@ -119,7 +129,10 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 50px 250px;
+    width: 100%;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
     scroll-margin-top: 64px;
 }
 
@@ -203,6 +216,11 @@ body {
 
     gap: 20px;
 }
+
+.unit-project-style h2 {
+    text-align: center;
+}
+
 
 .information-container{
 
@@ -293,9 +311,15 @@ body {
     gap: 20px;
 }
 
+
 .screenshot-project{
     border-radius: 15px;
 }
+
+
+
+
+
 
 .button-demo{
     background-color: #ffffff;
@@ -425,7 +449,7 @@ a{
 
 /* MOVIL RESPONSIVE */
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     /* aquí sobrescribes solo lo que necesita cambiar */
     .header-style{
     background-color: #1F1F23;
@@ -435,18 +459,16 @@ a{
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 10px;
-
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 100;
+
+    height: 64px;
     }
 
     .header-nav {
         display: none;
-        gap: 20px;
     }
 
     .hamburger {
@@ -456,10 +478,12 @@ a{
     
     /*Section Home*/
     .presentation{
-        width: 95%;
+        width: 100%;
     }
 
-
+    .languages{
+        display: none;
+    }
 
    
     /*Section About Me*/
@@ -469,7 +493,10 @@ a{
     justify-content: center;
     align-items: center;
 
-    padding: 50px 100px;
+    /*padding: 50px 100px;*/
+
+    width: 100%;
+    padding: 50px 50px;
     scroll-margin-top: 64px;
 }
 
@@ -517,7 +544,6 @@ a{
         padding-top: 30px;
         padding-bottom: 40px;
 
-        font-size: 20px;
     }
 
 
@@ -535,36 +561,83 @@ a{
         position: relative;
 
         background-color: #161B22;
-        width: 270px;
+        width: 90%;
+        max-width: 430px;
         height: 1150px;
         margin: 0;
 
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
-
+        /*justify-content: center;*/
+        
+        /*
         padding: 50px 80px;
-        scroll-margin-top: 63px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        padding-right: 80px;
+        scroll-margin-top: 63px;*/
 
         border-radius: 40px;
 
-        gap: 20px;
+        /*gap: 2000px;*/
     }
 
 
 
     .information-container{
 
-        width: 200px;
+        /*
+        width: auto;
+        height: auto;
+        */
+
+        width: 130%;
 
         display: flex;
         flex-direction: column;
         align-items: center;
+        /*justify-content: center;*/
+
+        /*gap: 30px;*/
+    }
+
+    
+    .screenshot-project {
+        width: 130%;
+        border-radius: 15px;
+    }
+
+    .screenshot-project-container-mobile{
+        width: 50%;
+        aspect-ratio: 9 / 16;
+        object-fit: cover;
+    
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: center;
+
+        /*gap: 30px;*/
+    }
+
+    
+    .screenshot-project-container-pc{
+        width: 100%;
+        max-width: 400px;   
+        
+        aspect-ratio: 16 / 9;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
         gap: 30px;
     }
+    
+
 
 
     .button-demo{
@@ -586,10 +659,57 @@ a{
   
 
 
+    /*Section Contact*/
+
+    
+    .contact-style{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 50px;
+        padding-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        
+    }
+
+    .textContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        padding-top: 20px;
+    }
+
+    .textContact p{
+        text-align: center;
+    }
+    
+    .networksContact{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: 40px;
+
+    }
+
+    .icons-contact{
+        width: 30px;
+    }
 
 
+    .footer-style{
 
-
+        padding-bottom: 10px;
+    }
 
 
 
@@ -618,7 +738,7 @@ a{
 
     h5{
         color: #ffffff;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     h6{
@@ -626,10 +746,12 @@ a{
         font-size: 10px;
     }
 
-    p {
+    p, li {
     color: #ffffff;
     text-align: justify;
     font-size: 12px;
     }
+
+
     
 }
